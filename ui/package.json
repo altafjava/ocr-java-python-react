@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "copy-win": "xcopy build ..\\src\\main\\resources\\static /E /Y"
+    "copy-win": "rmdir /s /q ..\\src\\main\\resources\\static && xcopy build ..\\src\\main\\resources\\static /e /y /i"
   },
   "eslintConfig": {
     "extends": "react-app"
